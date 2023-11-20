@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@700&family=Rubik:wght@600&family=Ubuntu&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: #0077b6;
+}
+.queto-box {
+    background: #edf2f4;
+    width: 700px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.queto-box h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(5, 5, 71);
+    position: relative;
+
+}
+
+.queto-box h2::after{
+    content: "";
+    background-color: blue;
+    width: 75px;
+    height: 3px;
+    position: absolute;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.queto-box blockquote::before,.queto-box blockquote::after{
+    content: '"';
+}
+
+.queto-box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.queto-box span::before{
+    content: '';
+    position: absolute;
+    background: blue;
+    width: 20px;
+    height: 3px;
+    top: 50%;
+left: -30px;
+}
+.queto-box div{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.queto-box div button{
+    display: flex;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 5px;
+    width: 150px;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
